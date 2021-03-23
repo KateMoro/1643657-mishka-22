@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Екатерина Морозова](https://up.htmlacademy.ru/adaptive/22/user/1643657).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
