@@ -49,18 +49,18 @@
         <h2 class="week-product__title">Вязаные корзинки</h2>
         <p class="week-product__text">Товар недели</p>
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <dl class="week-product__list">
-          <div class="week-product__item product-item">
-            <dt class="product-item__property">Цвет:</dt>
-            <dd class="product-item__value">«Тиффани»/серый</dd>
+        <dl class="week-product__list product-specification">
+          <div class="product-specification__item">
+            <dt class="product-specification__name">Цвет:</dt>
+            <dd class="product-specification__value">«Тиффани»/серый</dd>
           </div>
-          <div class="week-product__item product-item">
-            <dt class="product-item__property">Диаметр:</dt>
-            <dd class="product-item__value">25 см</dd>
+          <div class="product-specification__item">
+            <dt class="product-specification__name">Диаметр:</dt>
+            <dd class="product-specification__value">25 см</dd>
           </div>
-          <div class="week-product__item product-item">
-            <dt class="product-item__property">Высота:</dt>
-            <dd class="product-item__value">15 см</dd>
+          <div class="product-specification__item">
+            <dt class="product-specification__name">Высота:</dt>
+            <dd class="product-specification__value">15 см</dd>
           </div>
         </dl>
         <img class="week-product__image" src="img/triple-set.jpg" width="260" height="315" alt="Три вязанные корзинки разных размеров">
@@ -167,29 +167,27 @@
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form class="modal__form size-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="size-form__fieldset">
-          <legend class="size-form__legend">Выберите размер:</legend>
-          <ul class="size-form__list">
-            <li class="size-form__item size-form__item--active size-item">
-              <label class="size-item__label">
-                <input class="size-item__input" type="radio" name="size" value="small" checked>
-                S
-              </label>
-            </li>
-            <li class="size-form__item">
-              <label class="size-item__label">
-                <input class="size-item__input" type="radio" name="size" value="medium">
-                M
-              </label>
-            </li>
-            <li class="size-form__item">
-              <label class="size-item__label">
-                <input class="size-item__input" type="radio" name="size" value="large">
-                L
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <h3 class="size-form__title">Выберите размер:</h3>
+        <ul class="size-form__list">
+          <li class="size-form__item size-form__item--active size-item">
+            <label class="size-item__label">
+              <input class="size-item__input" type="radio" name="size" value="small" checked>
+              S
+            </label>
+          </li>
+          <li class="size-form__item">
+            <label class="size-item__label">
+              <input class="size-item__input" type="radio" name="size" value="medium">
+              M
+            </label>
+          </li>
+          <li class="size-form__item">
+            <label class="size-item__label">
+              <input class="size-item__input" type="radio" name="size" value="large">
+              L
+            </label>
+          </li>
+        </ul>
         <button class="size-form__button button" type="submit">Добавить</button>
       </form>
     </section>
