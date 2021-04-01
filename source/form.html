@@ -48,7 +48,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__group form-group form-group--bg">
+      <fieldset class="order-form__group form-group">
         <legend class="form-group__title">Цвет</legend>
         <ul class="form-group__list">
           <li class="form-group__item">
@@ -112,7 +112,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__group form-group form-group--bg" aria-label="Контактная информация">
+      <fieldset class="order-form__group form-group">
+        <legend class="visually-hidden">Контактная информация</legend>
         <p class="form-group__item">
           <label class="form-group__field text text--color" aria-label="Телефон">
             Тел
@@ -127,9 +128,9 @@
         </p>
       </fieldset>
       <p class="order-form__group form-group">
-        <label class="form-group__field text text--color" aria-label="Дополнительная информация">
-          Доп
-          <textarea class="text__input" name="add" cols="30" rows="10">Опишите все ваши пожелания к заказу</textarea>
+        <label class="form-group__field text text--color">
+          Доп<span class="visually-hidden">олнительная информация</span>
+          <textarea class="text__input" name="add" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
       </p>
       <small class="order-form__small-text">*Поля обязательны для заполнения</small>
