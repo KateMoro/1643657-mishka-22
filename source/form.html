@@ -31,105 +31,105 @@
     <h1 class="page-main__title">Вязание на заказ</h1>
     <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="page-main__form order-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="order-form__fieldset fieldset-type">
-        <legend class="fieldset-type__legend">Тип</legend>
-        <ul class="fieldset-type__list">
-          <li class="fieldset-type__item">
-            <label class="fieldset-type__label">
-              <input class="fieldset-type__input input-radio" type="radio" name="type" value="accessory" checked>
+      <fieldset class="order-form__group form-group">
+        <legend class="form-group__title">Тип</legend>
+        <ul class="form-group__list">
+          <li class="form-group__item">
+            <label class="form-group__field radio">
+              <input class="radio__input" type="radio" name="type" value="accessory" checked>
               Аксессуар для интерьера
             </label>
           </li>
-          <li class="fieldset-type__item">
-            <label class="fieldset-type__label">
-              <input class="fieldset-type__input input-radio" type="radio" name="type" value="toy">
+          <li class="form-group__item">
+            <label class="form-group__field radio">
+              <input class="radio__input" type="radio" name="type" value="toy">
               Детская игрушка
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__fieldset fieldset-color">
-        <legend class="fieldset-color__legend">Цвет</legend>
-        <ul class="fieldset-color__list">
-          <li class="fieldset-color__item">
-            <label class="fieldset-color__label">
-              <input class="fieldset-color__input input-checkbox" type="checkbox" name="white" checked>
+      <fieldset class="order-form__group form-group form-group--bg">
+        <legend class="form-group__title">Цвет</legend>
+        <ul class="form-group__list">
+          <li class="form-group__item">
+            <label class="form-group__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="white" checked>
               Белый
             </label>
           </li>
-          <li class="fieldset-color__item">
-            <label class="fieldset-color__label">
-              <input class="fieldset-color__input input-checkbox" type="checkbox" name="gray" checked>
+          <li class="form-group__item">
+            <label class="form-group__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="gray" checked>
               Серый
             </label>
           </li>
-          <li class="fieldset-color__item">
-            <label class="fieldset-color__label">
-              <input class="fieldset-color__input input-checkbox" type="checkbox" name="tiffany">
+          <li class="form-group__item">
+            <label class="form-group__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="tiffany">
               «Тиффани»
             </label>
           </li>
-          <li class="fieldset-color__item">
-            <label class="fieldset-color__label">
-              <input class="fieldset-color__input input-checkbox" type="checkbox" name="black">
+          <li class="form-group__item">
+            <label class="form-group__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="black">
               Черный
             </label>
           </li>
-          <li class="fieldset-color__item">
-            <label class="fieldset-color__label">
-              <input class="fieldset-color__input input-checkbox" type="checkbox" name="pink">
+          <li class="form-group__item">
+            <label class="form-group__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="pink">
               Розовый
             </label>
           </li>
-          <li class="fieldset-color__item">
-            <label class="fieldset-color__label">
-              <input class="fieldset-color__input input-checkbox" type="checkbox" name="orange">
+          <li class="form-group__item">
+            <label class="form-group__field checkbox">
+              <input class="checkbox__input" type="checkbox" name="orange">
               Оранжевый
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__fieldset fieldset-fullname">
-        <legend class="fieldset-fullname__legend">ФИО</legend>
-        <ul class="fieldset-fullname__list">
-          <li class="fieldset-fullname__item">
-            <label class="fieldset-fullname__label">
+      <fieldset class="order-form__group form-group">
+        <legend class="form-group__title">ФИО</legend>
+        <ul class="form-group__list">
+          <li class="form-group__item">
+            <label class="form-group__field text">
               Имя:
-              <input class="fieldset-fullname__input input-text" type="text" name="name" placeholder="Введите ваше имя*">
+              <input class="text__input" type="text" name="name" placeholder="Введите ваше имя*">
             </label>
           </li>
-          <li class="fieldset-fullname__item">
-            <label class="fieldset-fullname__label">
+          <li class="form-group__item">
+            <label class="form-group__field text">
               Фамилия:
-              <input class="fieldset-fullname__input input-text" type="text" name="surname" placeholder="Укажите фамилию*">
+              <input class="text__input" type="text" name="surname" placeholder="Укажите фамилию*">
             </label>
           </li>
-          <li class="fieldset-fullname__item">
-            <label class="fieldset-fullname__label">
+          <li class="form-group__item">
+            <label class="form-group__field text">
               Отчество:
-              <input class="fieldset-fullname__input input-text" type="text" name="patronymic" placeholder="Отчество, если желаете">
+              <input class="text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__fieldset fieldset-contacts" aria-label="Контактная информация">
-        <p class="fieldset-contacts__item">
-          <label class="fieldset-contacts__label" aria-label="Телефон">
+      <fieldset class="order-form__group form-group form-group--bg" aria-label="Контактная информация">
+        <p class="form-group__item">
+          <label class="form-group__field text text--color" aria-label="Телефон">
             Тел
-            <input class="fieldset-contacts__input input-tel fieldset-contacts__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input class="text__input text__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </label>
         </p>
-        <p class="fieldset-contacts__item">
-          <label class="fieldset-contacts__label" aria-label="Электронная почта">
+        <p class="form-group__item">
+          <label class="form-group__field text text--color" aria-label="Электронная почта">
             E-mail
-            <input class="fieldset-contacts__input input-email fieldset-contacts__input--email" type="email" name="email" placeholder="Ваш Email*">
+            <input class="text__input text__input--email" type="email" name="email" placeholder="Ваш Email*">
           </label>
         </p>
       </fieldset>
-      <p class="order-form__add-info add-info">
-        <label class="add-info__label" aria-label="Дополнительная информация">
+      <p class="order-form__group form-group">
+        <label class="form-group__field text text--color" aria-label="Дополнительная информация">
           Доп
-          <textarea class="add-info__textarea" name="add" cols="30" rows="10">Опишите все ваши пожелания к заказу</textarea>
+          <textarea class="text__input" name="add" cols="30" rows="10">Опишите все ваши пожелания к заказу</textarea>
         </label>
       </p>
       <small class="order-form__small-text">*Поля обязательны для заполнения</small>
