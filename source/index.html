@@ -171,23 +171,17 @@
       <form class="modal__form size-form" action="https://echo.htmlacademy.ru" method="get">
         <h3 class="size-form__title">Выберите размер:</h3>
         <ul class="size-form__list">
-          <li class="size-form__item size-item size-item--active">
-            <label class="size-item__label">
-              <input class="visually-hidden" type="radio" name="size" value="small" checked>
-              S
-            </label>
+          <li class="size-form__item size-item">
+            <input class="visually-hidden" id="s-size" type="radio" name="size" value="small" checked>
+            <label class="size-item__label" for="s-size">S</label>
           </li>
           <li class="size-form__item size-item">
-            <label class="size-item__label">
-              <input class="visually-hidden" type="radio" name="size" value="medium">
-              M
-            </label>
+            <input class="visually-hidden" id="m-size" type="radio" name="size" value="medium">
+            <label class="size-item__label" for="m-size">M</label>
           </li>
           <li class="size-form__item size-item">
-            <label class="size-item__label">
-              <input class="visually-hidden" type="radio" name="size" value="large">
-              L
-            </label>
+            <input class="visually-hidden" id="l-size" type="radio" name="size" value="large">
+            <label class="size-item__label" for="l-size">L</label>
           </li>
         </ul>
         <button class="size-form__button button button--green" type="submit">Добавить</button>

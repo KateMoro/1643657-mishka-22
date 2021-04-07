@@ -1,14 +1,12 @@
-.size-item {
-  padding: 20px;
-  border: 2px solid rgba($secondary-dark, 0.1);
-}
-
-.size-item--active {
-  border-color: $accent;
-}
-
 .size-item__label {
+  display: block;
+  padding: 20px;
   font-size: 17px;
   font-weight: 700;
   color: $secondary-dark;
+  border: 2px solid rgba($secondary-dark, 0.1);
+}
+
+input:checked + .size-item__label {
+  border-color: $accent;
 }
