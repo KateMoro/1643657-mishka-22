@@ -1,0 +1,22 @@
+.blockquote-item {
+  margin: 0;
+}
+
+.blockquote-item__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $secondary-dark;
+}
+
+.blockquote-item__author {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.blockquote-item__author-link {
+  font-size: 17px;
+  line-height: 30px;
+  color: $secondary-dark;
+  text-decoration: none;
+}

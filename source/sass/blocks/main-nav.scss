@@ -1,0 +1,26 @@
+.main-nav__logo {
+  display: block;
+  padding: 22px 0;
+  text-align: center;
+  border-bottom: 1px solid $border;
+}
+
+.main-nav__search {
+  display: block;
+  padding: 27px 0 27px 76px;
+  font-size: 17px;
+  font-weight: 700;
+  color: $primary-dark;
+  text-decoration: none;
+  border-bottom: 1px solid $border;
+}
+
+.main-nav__cart {
+  display: block;
+  padding: 27px 0 27px 76px;
+  font-size: 17px;
+  font-weight: 700;
+  color: $primary-dark;
+  text-decoration: none;
+  border-bottom: 1px solid $border;
+}

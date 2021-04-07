@@ -1,0 +1,27 @@
+.week-product {
+  padding: 30px;
+}
+
+.week-product__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.week-product__text {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.week-product__description {
+  color: $secondary-dark;
+}
+
+.week-product__price {
+  font-size: 17px;
+  font-weight: 700;
+  color: $secondary-dark;
+  text-align: center;
+}

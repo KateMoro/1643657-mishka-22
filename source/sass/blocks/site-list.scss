@@ -1,0 +1,15 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  padding: 27px 0 27px 76px;
+  font-size: 17px;
+  font-weight: 700;
+  color: $primary-dark;
+  text-decoration: none;
+  border-bottom: 1px solid $border;
+}

@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/intro.scss";
+@import "blocks/product-categories.scss";
+@import "blocks/category-link.scss";
+@import "blocks/week-product.scss";
+@import "blocks/product-specification.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/blockquote-item.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-item.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";
+@import "blocks/size-form.scss";
+@import "blocks/size-item.scss";

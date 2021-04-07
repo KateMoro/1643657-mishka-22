@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -28,7 +30,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин игрушек ручной работы «Мишка»</h1>
       <div class="intro">
-        <p class="intro__text">Милые штуки ручной работы для дома</p>
+        <p class="intro__text">Милые штуки ручной<br> работы для дома</p>
       </div>
       <section class="product-categories">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -107,7 +109,7 @@
           <div class="contacts__item contacts-item">
             <dt class="contacts-item__email">e-mail:</dt>
             <dd class="contacts-item__description">
-              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts-item__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
           </div>
           <div class="contacts__item contacts-item">
@@ -169,26 +171,26 @@
       <form class="modal__form size-form" action="https://echo.htmlacademy.ru" method="get">
         <h3 class="size-form__title">Выберите размер:</h3>
         <ul class="size-form__list">
-          <li class="size-form__item size-form__item--active size-item">
+          <li class="size-form__item size-item size-item--active">
             <label class="size-item__label">
-              <input class="size-item__input" type="radio" name="size" value="small" checked>
+              <input class="visually-hidden" type="radio" name="size" value="small" checked>
               S
             </label>
           </li>
-          <li class="size-form__item">
+          <li class="size-form__item size-item">
             <label class="size-item__label">
-              <input class="size-item__input" type="radio" name="size" value="medium">
+              <input class="visually-hidden" type="radio" name="size" value="medium">
               M
             </label>
           </li>
-          <li class="size-form__item">
+          <li class="size-form__item size-item">
             <label class="size-item__label">
-              <input class="size-item__input" type="radio" name="size" value="large">
+              <input class="visually-hidden" type="radio" name="size" value="large">
               L
             </label>
           </li>
         </ul>
-        <button class="size-form__button button" type="submit">Добавить</button>
+        <button class="size-form__button button button--green" type="submit">Добавить</button>
       </form>
     </section>
   </body>
