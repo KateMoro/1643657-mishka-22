@@ -1,0 +1,13 @@
+.contacts-item {
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-dark;
+}
+
+.contacts-item__link {
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-dark;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-3;
+}

@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  padding: 16px 10px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $secondary-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $secondary-dark;
+}
+
+.button--green {
+  color: $primary-light;
+  background-color: $accent;
+  border: none;
+}
