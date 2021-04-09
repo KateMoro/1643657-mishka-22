@@ -4,15 +4,15 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: $secondary-dark;
+  color: $color-gray-700;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  border: 2px solid $secondary-dark;
+  border: 2px solid $color-gray-700;
 }
 
 .button--green {
-  color: $primary-light;
-  background-color: $accent;
+  color: $color-white;
+  background-color: $color-primary-100;
   border: none;
 }

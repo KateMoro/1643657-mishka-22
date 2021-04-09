@@ -12,16 +12,16 @@
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $accent;
+  color: $color-primary-100;
 }
 
 .week-product__description {
-  color: $secondary-dark;
+  color: $color-gray-700;
 }
 
 .week-product__price {
   font-size: 17px;
   font-weight: 700;
-  color: $secondary-dark;
+  color: $color-gray-700;
   text-align: center;
 }
