@@ -3,10 +3,10 @@
   padding: 20px;
   font-size: 17px;
   font-weight: 700;
-  color: $secondary-dark;
-  border: 2px solid rgba($secondary-dark, 0.1);
+  color: $color-gray-700;
+  border: 2px solid rgba($color-gray-700, 0.1);
 }
 
 input:checked + .size-item__label {
-  border-color: $accent;
+  border-color: $color-primary-100;
 }

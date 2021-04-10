@@ -5,9 +5,9 @@
 }
 
 .product-categories__item {
-  background-color: $accent;
+  background-color: $color-primary-100;
 
   &:nth-child(2) {
-    background-color: $accent-4;
+    background-color: $color-primary-400;
   }
 }
