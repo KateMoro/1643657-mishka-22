@@ -1,0 +1,22 @@
+.product-card {
+  border-bottom: 1px solid $color-gray-200;
+}
+
+.product-card__title-link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  font-size: 17px;
+  color: $color-black;
+}
+
+.product-card__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-gray-700;
+}
+
+.product-card__price {
+  font-weight: 700;
+}
