@@ -1,6 +1,9 @@
 .size-item__label {
-  display: block;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 52px;
   font-size: 17px;
   font-weight: 700;
   color: $color-gray-700;

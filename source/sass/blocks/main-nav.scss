@@ -1,26 +1,114 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 83px 265px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 410px 230px 145px 265px;
+  }
+}
+
 .main-nav__logo {
   display: block;
   padding: 22px 0;
   text-align: center;
-  border-bottom: 1px solid $color-gray-200;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+  }
+}
+
+.main-nav__list--bottom {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 
 .main-nav__search {
   display: block;
-  padding: 27px 0 27px 76px;
+  padding: 27px 30px 27px 76px;
   font-size: 17px;
   font-weight: 700;
   color: $color-black;
   text-decoration: none;
-  border-bottom: 1px solid $color-gray-200;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+  }
 }
 
 .main-nav__cart {
   display: block;
-  padding: 27px 0 27px 76px;
+  padding: 27px 30px 27px 76px;
   font-size: 17px;
   font-weight: 700;
   color: $color-black;
   text-decoration: none;
-  border-bottom: 1px solid $color-gray-200;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-right: 0;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+  }
+}
+
+.main-nav__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    align-self: center;
+    text-align: right;
+    color: $color-gray-700;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/5;
+  }
 }

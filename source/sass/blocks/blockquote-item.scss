@@ -6,6 +6,10 @@
   font-size: 15px;
   line-height: 30px;
   color: $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .blockquote-item__author {
@@ -15,6 +19,7 @@
 }
 
 .blockquote-item__author-link {
+  display: block;
   font-size: 17px;
   line-height: 30px;
   color: $color-gray-700;

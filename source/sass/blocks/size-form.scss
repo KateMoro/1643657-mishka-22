@@ -4,10 +4,31 @@
   font-weight: 400;
   color: $color-gray-700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .size-form__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.size-form__item {
+  margin-right: 7px;
+}
+
+.size-form__item:last-of-type {
+  margin-right: 0;
+}
+
+.size-form__button {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 46px;
 }

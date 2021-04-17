@@ -1,9 +1,18 @@
-.page-main__title {
-  font-size: 27px;
-  line-height: 30px;
+.page-main {
+  @media (min-width: $tablet-width) {
+    margin-top: -65px;
+    border-top: 1px solid rgba($color-black, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -83px;
+  }
 }
 
-.page-main__text {
-  font-size: 13px;
-  color: $color-gray-700;
+.page-main__center {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

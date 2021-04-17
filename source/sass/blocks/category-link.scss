@@ -4,6 +4,11 @@
   font-weight: 700;
   color: $color-white;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .category-link__text {
