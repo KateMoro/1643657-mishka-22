@@ -3,6 +3,7 @@
 }
 
 .blockquote-item__text {
+  margin: 0;
   font-size: 15px;
   line-height: 30px;
   color: $color-gray-700;
@@ -13,9 +14,15 @@
 }
 
 .blockquote-item__author {
+  display: block;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-right: 200px;
+  }
 }
 
 .blockquote-item__author-link {
@@ -24,4 +31,8 @@
   line-height: 30px;
   color: $color-gray-700;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 200px;
+  }
 }

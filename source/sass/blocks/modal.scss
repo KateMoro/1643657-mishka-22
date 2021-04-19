@@ -3,7 +3,11 @@
   margin: 0 auto;
   padding: 0 30px;
   border: 1px solid $color-gray-400;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px rgba($color-black, 0.25);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 100px;
+  }
 }
 
 .modal__title {

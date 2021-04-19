@@ -2,12 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 52px;
+  padding: 18px 30px;
   font-size: 17px;
   font-weight: 700;
   color: $color-gray-700;
   border: 2px solid rgba($color-gray-700, 0.1);
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 45px;
+  }
 }
 
 input:checked + .size-item__label {

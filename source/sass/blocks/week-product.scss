@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 292px 1fr min-content;
     z-index: 1;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
 
@@ -50,7 +50,6 @@
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
     grid-row: 1/2;
-    align-self: center;
     padding: 0 25px;
     text-align: center;
   }

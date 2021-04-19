@@ -4,8 +4,8 @@
 
 .page-footer__container {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -24,6 +24,9 @@
   border-bottom: 1px solid $color-gray-300;
 
   @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-left: 30px;
     border: none;
   }
 }
