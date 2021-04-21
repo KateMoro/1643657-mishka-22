@@ -1,4 +1,32 @@
 .page-footer {
-  padding: 30px;
   background-color: $color-gray-100;
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    align-self: center;
+  }
+}
+
+.page-footer__socials {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid $color-gray-300;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-left: 30px;
+    border: none;
+  }
 }

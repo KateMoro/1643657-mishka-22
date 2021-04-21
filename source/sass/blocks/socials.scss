@@ -1,5 +1,17 @@
 .socials__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.socials__item {
+  margin-right: 41px;
+  align-self: center;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
 }

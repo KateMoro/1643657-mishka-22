@@ -5,6 +5,9 @@
 .page__body {
   min-width: 320px;
   min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;

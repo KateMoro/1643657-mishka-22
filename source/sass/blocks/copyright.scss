@@ -1,4 +1,15 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
+  margin: 30px;
   font-size: 19px;
   font-weight: 700;
+}
+
+.copyright__link svg {
+  display: block;
 }

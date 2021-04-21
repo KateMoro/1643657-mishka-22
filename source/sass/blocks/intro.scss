@@ -1,16 +1,19 @@
 .intro {
-  min-height: 282px;
-  padding: 70px 30px;
+  padding: 73px 30px 120px;
   background-image: url("../img/bg-index-intro.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 155px 50px 370px;
+  }
 }
 
 .intro__text {
   margin: 0;
-  font-size: 27px;
-  line-height: 30px;
   font-weight: 700;
   text-align: center;
+
+  @include section-title;
 }
