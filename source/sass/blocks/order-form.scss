@@ -1,5 +1,33 @@
+.order-form {
+  position: relative;
+}
+
 .order-form__small-text {
+  display: block;
+  margin: 0 30px 30px;
   font-size: 14px;
   line-height: 16px;
   color: $color-gray-700;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    text-align: right;
+  }
+}
+
+.order-form__button {
+  padding: 16px 40px;
+  margin: 0 auto 50px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50px;
+    bottom: -60px;
+  }
 }

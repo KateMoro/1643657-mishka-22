@@ -1,0 +1,43 @@
+.add-group {
+  margin: 0;
+}
+
+.add-group__field {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: $color-primary-100;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.add-group__textarea {
+  width: 260px;
+  height: 142px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid $color-gray-700;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 501px;
+    height: 142px;
+    font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    height: 142px;
+  }
+}
+
+.add-group__textarea::placeholder {
+  color: rgba($color-black, 0.3);
+}

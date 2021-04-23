@@ -2,18 +2,48 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.form-group:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    background-color: $color-gray-100;
+  }
 }
 
 .form-group__title {
-  padding: 30px 0;
+  margin: 25px 30px;
   font-size: 17px;
   font-weight: 700;
   color: $color-primary-100;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 110px;
+  }
 }
 
 .form-group__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 165px;
+  }
+}
+
+.form-group__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
