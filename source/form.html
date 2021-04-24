@@ -50,9 +50,9 @@
       <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
     <form class="page-main__form order-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="order-form__group form-group">
-        <legend class="form-group__title">Тип</legend>
-        <div class="container">
+      <div class="order-form__wrapper">
+        <fieldset class="order-form__group form-group form-group--center">
+          <legend class="form-group__title">Тип</legend>
           <ul class="form-group__list">
             <li class="form-group__item">
               <label class="form-group__field radio">
@@ -67,11 +67,11 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="order-form__group form-group">
-        <legend class="form-group__title">Цвет</legend>
-        <div class="container">
+        </fieldset>
+      </div>
+      <div class="order-form__wrapper">
+        <fieldset class="order-form__group form-group form-group--center">
+          <legend class="form-group__title">Цвет</legend>
           <ul class="form-group__list color-list">
             <li class="form-group__item">
               <label class="form-group__field checkbox">
@@ -110,11 +110,11 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="order-form__group form-group">
-        <legend class="form-group__title">ФИО</legend>
-        <div class="container">
+        </fieldset>
+      </div>
+      <div class="order-form__wrapper">
+        <fieldset class="order-form__group form-group form-group--center form-group--padding-right">
+          <legend class="form-group__title">ФИО</legend>
           <ul class="form-group__list">
             <li class="form-group__item">
               <label class="form-group__field text">
@@ -135,11 +135,11 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="order-form__group form-group">
-        <legend class="visually-hidden">Контактная информация</legend>
-        <div class="container">
+        </fieldset>
+      </div>
+      <div class="order-form__wrapper">
+        <fieldset class="order-form__group form-group form-group--center form-group--padding-right">
+          <legend class="visually-hidden">Контактная информация</legend>
           <p class="form-group__item">
             <label class="form-group__field text text--color text-grid" aria-label="Телефон">
               Тел
@@ -152,18 +152,20 @@
               <input class="text__input text__input--email" type="email" name="email" placeholder="Ваш Email*">
             </label>
           </p>
-        </div>
-      </fieldset>
-      <div class="container">
-        <p class="order-form__group add-group">
-          <label class="add-group__field text text--color">
+        </fieldset>
+      </div>
+      <div class="order-form__wrapper">
+        <p class="order-form__group form-group form-group--center form-group--padding-right">
+          <label class="form-group__field text text--color">
             Доп<span class="visually-hidden">олнительная информация</span>
-            <textarea class="add-group__textarea" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="text__input text__input--border" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </p>
       </div>
-      <small class="order-form__small-text">*Поля обязательны для заполнения</small>
-      <button class="order-form__button button" type="submit">Отправить заказ</button>
+      <div class="container order-form__inner">
+        <small class="order-form__small-text">*Поля обязательны для заполнения</small>
+        <button class="order-form__button button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
@@ -211,4 +213,5 @@
     </div>
   </footer>
 </body>
+
 </html>

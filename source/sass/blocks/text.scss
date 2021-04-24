@@ -36,6 +36,10 @@
   color: rgba($color-black, 0.3);
 }
 
+.text__input--border {
+  border: 2px solid $color-gray-700;
+}
+
 .text__input--phone {
   @media (min-width: $tablet-width) {
     background-color: inherit;
