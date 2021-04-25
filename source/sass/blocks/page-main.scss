@@ -16,3 +16,35 @@
     width: $desktop-width;
   }
 }
+
+.page-main__title {
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  @include section-title;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 95px;
+  }
+}
+
+.page-main__text {
+  margin: 17px 0;
+  font-size: 13px;
+  color: $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 100px 175px 60px;
+  }
+}

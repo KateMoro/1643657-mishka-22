@@ -1,5 +1,42 @@
+.order-form__wrapper:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    background-color: $color-gray-100;
+  }
+}
+
+.order-form__inner {
+  padding-top: 17px;
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+}
+
 .order-form__small-text {
+  display: block;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   color: $color-gray-700;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+  }
+}
+
+.order-form__button {
+  padding: 16px 40px;
+  background-color: transparent;
 }

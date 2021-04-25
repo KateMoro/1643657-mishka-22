@@ -1,6 +1,12 @@
 .text {
   font-size: 17px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .text--color {
@@ -18,6 +24,12 @@
   font-size: 17px;
   border: none;
   border-bottom: 2px solid $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+    font-size: 19px;
+    padding: 18px;
+  }
 }
 
 .text__input::placeholder {
@@ -26,4 +38,18 @@
 
 .text__input--border {
   border: 2px solid $color-gray-700;
+}
+
+.text__input--phone {
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+    width: auto;
+  }
+}
+
+.text__input--email {
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+    width: auto;
+  }
 }
