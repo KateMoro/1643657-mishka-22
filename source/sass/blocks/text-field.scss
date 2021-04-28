@@ -1,4 +1,4 @@
-.text {
+.text-field {
   font-size: 17px;
   font-weight: 700;
 
@@ -9,14 +9,14 @@
   }
 }
 
-.text--color {
+.text-field--color {
   font-size: 17px;
   font-weight: 700;
   color: $color-primary-100;
   text-transform: uppercase;
 }
 
-.text__input {
+.text-field__input {
   display: block;
   width: 100%;
   padding: 17px 0;
@@ -26,28 +26,29 @@
   border-bottom: 2px solid $color-gray-700;
 
   @media (min-width: $tablet-width) {
-    margin-left: 25px;
-    font-size: 19px;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
     padding: 18px;
+    font-size: 19px;
   }
 }
 
-.text__input::placeholder {
+.text-field__input::placeholder {
   color: rgba($color-black, 0.3);
 }
 
-.text__input--border {
+.text-field__input--border {
   border: 2px solid $color-gray-700;
 }
 
-.text__input--phone {
+.text-field__input--phone {
   @media (min-width: $tablet-width) {
     background-color: inherit;
     width: auto;
   }
 }
 
-.text__input--email {
+.text-field__input--email {
   @media (min-width: $tablet-width) {
     background-color: inherit;
     width: auto;

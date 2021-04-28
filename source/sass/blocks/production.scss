@@ -7,7 +7,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 1fr;
-    gap: 25px;
+    gap: 20px;
+    align-items: start;
   }
 }
 
@@ -24,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 95px 130px 0 50px;
+    padding: 95px 60px 0;
     border-top: none;
   }
 }
@@ -39,6 +40,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 1/4;
+    align-self: center;
   }
 }
 
@@ -55,7 +57,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 50px 28px;
+    margin-top: 0;
+    margin-left: 60px;
   }
 }
 
@@ -67,6 +70,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 50px 60px;
+    margin: 0 60px 60px;
   }
 }

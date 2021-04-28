@@ -1,7 +1,6 @@
 .text-grid {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 125px 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr 4fr;
   }
 }
