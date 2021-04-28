@@ -51,7 +51,7 @@
     </div>
     <form class="page-main__form order-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="order-form__wrapper">
-        <fieldset class="order-form__group form-group form-group--center">
+        <fieldset class="order-form__group form-group container">
           <legend class="form-group__title">Тип</legend>
           <ul class="form-group__list">
             <li class="form-group__item">
@@ -70,9 +70,9 @@
         </fieldset>
       </div>
       <div class="order-form__wrapper">
-        <fieldset class="order-form__group form-group form-group--center">
+        <fieldset class="order-form__group form-group container">
           <legend class="form-group__title">Цвет</legend>
-          <ul class="form-group__list color-list">
+          <ul class="form-group__list form-group__list--end color-list">
             <li class="form-group__item">
               <label class="form-group__field checkbox">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="white" checked>
@@ -113,54 +113,58 @@
         </fieldset>
       </div>
       <div class="order-form__wrapper">
-        <fieldset class="order-form__group form-group form-group--center form-group--padding-right">
+        <fieldset class="order-form__group form-group container">
           <legend class="form-group__title">ФИО</legend>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <label class="form-group__field text">
+              <label class="form-group__field text-field">
                 Имя:
-                <input class="text__input" type="text" name="name" placeholder="Введите ваше имя*">
+                <input class="text-field__input" type="text" name="name" placeholder="Введите ваше имя*">
               </label>
             </li>
             <li class="form-group__item">
-              <label class="form-group__field text">
+              <label class="form-group__field text-field">
                 Фамилия:
-                <input class="text__input" type="text" name="surname" placeholder="Укажите фамилию*">
+                <input class="text-field__input" type="text" name="surname" placeholder="Укажите фамилию*">
               </label>
             </li>
             <li class="form-group__item">
-              <label class="form-group__field text">
+              <label class="form-group__field text-field">
                 Отчество:
-                <input class="text__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                <input class="text-field__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
               </label>
             </li>
           </ul>
         </fieldset>
       </div>
       <div class="order-form__wrapper">
-        <fieldset class="order-form__group form-group form-group--center form-group--padding-right">
+        <fieldset class="order-form__group form-group container">
           <legend class="visually-hidden">Контактная информация</legend>
-          <p class="form-group__item">
-            <label class="form-group__field text text--color text-grid" aria-label="Телефон">
-              Тел
-              <input class="text__input text__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            </label>
-          </p>
-          <p class="form-group__item">
-            <label class="form-group__field text text--color text-grid" aria-label="Электронная почта">
-              E-mail
-              <input class="text__input text__input--email" type="email" name="email" placeholder="Ваш Email*">
-            </label>
-          </p>
+          <div class="form-group__list form-group__list--start">
+            <p class="form-group__item">
+              <label class="form-group__field text-field text-field--color text-grid" aria-label="Телефон">
+                Тел
+                <input class="text-field__input text-field__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              </label>
+            </p>
+            <p class="form-group__item">
+              <label class="form-group__field text-field text-field--color text-grid" aria-label="Электронная почта">
+                E-mail
+                <input class="text-field__input text-field__input--email" type="email" name="email" placeholder="Ваш Email*">
+              </label>
+            </p>
+          </div>
         </fieldset>
       </div>
       <div class="order-form__wrapper">
-        <p class="order-form__group form-group form-group--center form-group--padding-right">
-          <label class="form-group__field text text--color">
-            Доп<span class="visually-hidden">олнительная информация</span>
-            <textarea class="text__input text__input--border" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </label>
-        </p>
+        <div class="order-form__group form-group container">
+          <p class="form-group__list form-group__list--start">
+            <label class="form-group__field text-field text-field--color text-grid">
+              Доп<span class="visually-hidden">олнительная информация</span>
+              <textarea class="text-field__input text-field__input--border" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+          </p>
+        </div>
       </div>
       <div class="container order-form__inner">
         <small class="order-form__small-text">*Поля обязательны для заполнения</small>

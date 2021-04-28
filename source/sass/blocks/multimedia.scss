@@ -1,0 +1,32 @@
+.multimedia {
+  position: relative;
+}
+
+.multimedia__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+  }
+}
+
+.multimedia__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.multimedia__link-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -39px;
+  margin-left: -51px;
+}

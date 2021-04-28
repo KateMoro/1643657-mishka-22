@@ -48,3 +48,25 @@
     margin: 100px 175px 60px;
   }
 }
+
+.page-main__catalog {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+  }
+}
+
+.page-main__production {
+  margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
