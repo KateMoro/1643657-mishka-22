@@ -5,6 +5,13 @@
   color: $color-white;
   text-decoration: none;
 
+  padding: 24px 160px 32px 30px;
+
+  &:hover {
+    padding-top: 19px;
+    padding-bottom: 42px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -13,5 +20,4 @@
 
 .category-link__text {
   margin: 0;
-  padding: 24px 160px 31px 30px;
 }

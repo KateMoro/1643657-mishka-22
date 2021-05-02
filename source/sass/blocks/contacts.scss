@@ -1,25 +1,43 @@
 .contacts {
-  padding-top: 40px;
+  position: relative;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 140px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 155px auto 50%;
     gap: 20px;
-    padding: 170px 50px 105px;
+    padding: 73px 50px 100px;
+  }
+}
+
+.contacts::before {
+  @media (min-width: $tablet-width) {
+    content: url("../../img/flag.svg");
+    position: absolute;
+    top: 46px;
+    right: 53px;
+    width: 47px;
+    height: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 135px;
+    left: 115px;
   }
 }
 
 .contacts__title {
-  margin: 0;
+  margin: 20px 0 24px;
   padding-left: 30px;
 
   @include section-title;
 
   @media (min-width: $tablet-width) {
+    margin: 18px 0;
     padding-left: 50px;
   }
 
@@ -27,18 +45,22 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 80px;
+    margin-bottom: 0;
     padding-left: 0;
   }
 }
 
 .contacts__list {
+  margin: 0;
+  margin-bottom: 32px;
   padding-left: 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    padding: 35px 80px 35px 50px;
+    margin: 0;
+    padding: 30px 80px 20px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,12 +72,12 @@
 }
 
 .contacts__item {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 .contacts__map {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
     grid-row: 1/4;
@@ -73,13 +95,22 @@
   }
 }
 
+.contacts__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .contacts__write {
   padding: 16px 40px;
-  margin: 55px 30px;
+  margin: 35px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 16px 30px;
-    margin: 55px 270px;
+    margin: 48px 270px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,5 +119,7 @@
     justify-self: start;
     align-self: end;
     margin: 0;
+    font-size: 17px;
+    padding: 16px 39px;
   }
 }

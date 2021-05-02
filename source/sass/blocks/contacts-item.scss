@@ -18,7 +18,17 @@
 }
 
 .contacts-item__link {
+  padding-bottom: 5px;
   color: $color-gray-700;
   text-decoration: none;
   border-bottom: 1px solid $color-primary-200;
+
+  &:hover {
+    color: $color-primary-500;
+    border-bottom: 1px solid $color-primary-500;
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba($color-primary-500, 0.1);
+  }
 }
