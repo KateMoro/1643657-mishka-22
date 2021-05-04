@@ -4,7 +4,6 @@
   font-weight: 700;
   color: $color-white;
   text-decoration: none;
-
   padding: 24px 160px 32px 30px;
 
   &:hover {
@@ -13,6 +12,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
   }

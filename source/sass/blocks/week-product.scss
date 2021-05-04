@@ -15,13 +15,13 @@
 
 .week-product__container {
   padding-top: 30px;
-  padding-bottom: 38px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 334px 1fr min-content;
     z-index: 1;
-    padding-top: 56px;
+    padding-top: 53px;
     padding-bottom: 70px;
   }
 
@@ -34,7 +34,7 @@
 
 .week-product__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   @include section-title;
 
@@ -64,7 +64,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
     grid-row: 1/2;
-    padding: 0 25px;
+    padding: 2px 27px 0;
     text-align: center;
   }
 
@@ -83,7 +83,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     margin-right: 40px;
     font-size: 17px;
     line-height: 30px;
@@ -97,7 +97,7 @@
 }
 
 .week-product__price {
-  margin: 20px 0 23px;
+  margin: 18px 0 25px;
   font-size: 17px;
   font-weight: 700;
   color: $color-gray-700;
@@ -106,15 +106,15 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 4/5;
-    margin: 30px 40px 30px 0;
+    margin: 30px 47px 34px 0;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 4/5;
-    margin-top: 65px;
-    margin-right: 50px;
+    margin-top: 57px;
+    margin-right: 57px;
     margin-bottom: 0;
   }
 }
@@ -156,10 +156,13 @@
 }
 
 .week-product__button {
+  padding-top: 14px;
+  padding-bottom: 13px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 5/6;
-    margin-right: 40px;
+    margin-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -168,6 +171,5 @@
     align-self: end;
     margin-right: 58px;
     padding-top: 15px;
-    padding-bottom: 13px;
   }
 }

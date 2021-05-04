@@ -14,7 +14,7 @@
 
 .main-nav__logo {
   display: block;
-  padding: 22px 0;
+  padding: 19px 0;
   text-align: center;
 
   @media (max-width: $mobile-width-only) {
@@ -63,7 +63,7 @@
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,6 +137,11 @@
   width: 18px;
   height: 18px;
   fill: rgba($color-black, 0.2);
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 33px;
+  }
 }
 
 .main-nav__search:hover .main-nav__search-icon {
@@ -201,6 +206,11 @@
   width: 20px;
   height: 19px;
   fill: rgba($color-black, 0.2);
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: 33px;
+  }
 }
 
 .main-nav__cart:hover .main-nav__cart-icon {

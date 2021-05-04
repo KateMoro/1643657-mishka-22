@@ -5,9 +5,13 @@
 }
 
 .copyright__text {
-  margin: 25px 27px 25px 0;
+  margin: 27px 27px 25px 0;
   font-size: 19px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .copyright__link svg {

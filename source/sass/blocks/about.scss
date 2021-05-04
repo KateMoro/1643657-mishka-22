@@ -1,15 +1,15 @@
 .about {
-  padding-top: 32px;
+  padding-top: 33px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 64px;
-    padding-bottom: 90px;
+    padding-bottom: 94px;
   }
 }
 
@@ -59,6 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 88px;
     padding-right: 35px;
   }
 }
@@ -85,7 +86,7 @@
   background-image: url("../img/icon-flower.svg");
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 32px;
   }
 }
 
@@ -97,8 +98,13 @@
   background-image: url("../img/icon-clew.svg");
 
   @media (min-width: $tablet-width) {
-    top: 35px;
+    top: 36px;
     left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 34px;
+    left: 3px;
   }
 }
 
@@ -110,7 +116,7 @@
   background-image: url("../img/icon-bill.svg");
 
   @media (min-width: $tablet-width) {
-    top: 34px;
+    top: 35px;
   }
 }
 
@@ -122,8 +128,12 @@
   background-image: url("../img/icon-rocket.svg");
 
   @media (min-width: $tablet-width) {
-    top: 36px;
+    top: 37px;
     left: -9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -6px;
   }
 }
 
@@ -135,7 +145,7 @@
   background-image: url("../img/icon-heart.svg");
 
   @media (min-width: $tablet-width) {
-    top: 40px;
+    top: 42px;
     left: 8px;
   }
 }
@@ -148,7 +158,11 @@
   background-image: url("../img/icon-gift.svg");
 
   @media (min-width: $tablet-width) {
-    top: 35px;
+    top: 37px;
     left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 3px;
   }
 }

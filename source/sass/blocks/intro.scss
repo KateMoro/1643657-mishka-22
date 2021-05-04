@@ -1,16 +1,16 @@
 .intro {
-  padding: 66px 30px 120px;
+  padding: 71px 30px 120px;
   background-image: url("../img/bg-index-intro.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    padding: 155px 50px 370px;
+    padding: 155px 50px 490px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 358px;
+    padding-bottom: 477px;
   }
 }
 
@@ -18,6 +18,16 @@
   margin: 0;
   font-weight: 700;
   text-align: center;
+  font-size: 27px;
+  line-height: 30px;
 
-  @include section-title;
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

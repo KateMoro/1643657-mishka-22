@@ -1,6 +1,6 @@
 .contacts {
   position: relative;
-  padding-top: 22px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
@@ -16,7 +16,7 @@
 
 .contacts::before {
   @media (min-width: $tablet-width) {
-    content: url("../../img/flag.svg");
+    content: url("../img/flag.svg");
     position: absolute;
     top: 46px;
     right: 53px;
@@ -31,14 +31,16 @@
 }
 
 .contacts__title {
-  margin: 20px 0 24px;
+  margin: 20px 0 26px;
   padding-left: 30px;
-
-  @include section-title;
+  font-size: 18px;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
     margin: 18px 0;
     padding-left: 50px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +49,8 @@
     margin-top: 80px;
     margin-bottom: 0;
     padding-left: 0;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -60,7 +64,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin: 0;
-    padding: 30px 80px 20px 50px;
+    padding: 32px 80px 20px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +91,7 @@
 .contacts__map img {
   @media (min-width: $tablet-width) {
     width: 768px;
-    height: 457px;
+    height: 452px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,8 +113,9 @@
   margin: 35px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 30px;
-    margin: 48px 270px 53px;
+    padding: 14px 30px;
+    margin: 53px 270px 56px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +124,6 @@
     justify-self: start;
     align-self: end;
     margin: 0;
-    font-size: 17px;
     padding: 16px 39px;
   }
 }
