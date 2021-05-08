@@ -4,18 +4,46 @@
   font-weight: 700;
   color: $color-white;
   text-decoration: none;
-  padding: 24px 160px 32px 30px;
-
-  &:hover {
-    padding-top: 19px;
-    padding-bottom: 42px;
-  }
+  padding-top: 23px;
+  padding-bottom: 19px;
+  padding-left: 30px;
+  padding-right: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 26px;
-    padding-left: 35px;
+    padding: 28px 35px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.category-link__image {
+  fill: $color-primary-600;
+  fill-opacity: 0.5;
+}
+
+.category-link__image--lamp {
+  margin-right: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.category-link:hover .category-link__image {
+  fill-opacity: 0.7;
+}
+
+.category-link:active .category-link__image {
+  fill-opacity: 0.3;
+}
+
+.category-link__container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
   }
 }
 

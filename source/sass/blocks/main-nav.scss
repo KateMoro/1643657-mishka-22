@@ -49,6 +49,12 @@
   }
 }
 
+.main-nav__toggle--no-js {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-nav__toggle--opened {
   width: 21px;
   height: 20px;

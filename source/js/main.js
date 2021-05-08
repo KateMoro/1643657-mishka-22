@@ -10,6 +10,7 @@ const closePopup = document.querySelector(".modal__close");
 mainNavList.classList.add("main-nav__list--closed");
 mainNavSearch.classList.add("main-nav__search--closed");
 mainNavCart.classList.add("main-nav__cart--closed");
+mainNavButton.classList.remove("main-nav__toggle--no-js");
 
 mainNavButton.onclick = function() {
   mainNavButton.classList.toggle("main-nav__toggle--opened");
