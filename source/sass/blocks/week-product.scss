@@ -21,13 +21,13 @@
     display: grid;
     grid-template-columns: 334px 1fr min-content;
     z-index: 1;
-    padding-top: 53px;
+    padding-top: 48px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 175px 350px 525px;
-    padding-top: 73px;
+    padding-top: 68px;
     padding-bottom: 100px;
   }
 }
