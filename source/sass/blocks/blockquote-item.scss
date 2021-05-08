@@ -1,9 +1,6 @@
-.blockquote-item {
-  margin: 0;
-}
-
 .blockquote-item__text {
   margin: 0;
+  padding-bottom: 35px;
   font-size: 15px;
   line-height: 30px;
   color: $color-gray-700;
@@ -20,8 +17,14 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
+    font-size: 18px;
+    margin-top: 25px;
     margin-right: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    font-size: 17px;
   }
 }
 

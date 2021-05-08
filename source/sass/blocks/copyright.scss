@@ -5,11 +5,24 @@
 }
 
 .copyright__text {
-  margin: 30px;
+  margin: 27px 27px 25px 0;
   font-size: 19px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .copyright__link svg {
   display: block;
+  fill: $color-primary-100;
+}
+
+.copyright__link:hover svg {
+  fill: $color-primary-500;
+}
+
+.copyright__link:active svg {
+  fill: rgba($color-primary-500, 0.3);
 }

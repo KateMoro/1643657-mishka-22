@@ -1,15 +1,15 @@
 .about {
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 52px;
     padding-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 90px;
+    padding-top: 64px;
+    padding-bottom: 94px;
   }
 }
 
@@ -26,7 +26,6 @@
 
 .about__title {
   margin: 0;
-  margin-bottom: 6px;
 
   @include section-title;
 }
@@ -40,11 +39,14 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin-top: 10px;
   }
 }
 
 .about__item {
-  padding-top: 82px;
+  position: relative;
+  padding-top: 83px;
+  padding-right: 10px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -57,6 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 88px;
     padding-right: 35px;
   }
 }
@@ -66,5 +69,100 @@
 
   @media (min-width: $tablet-width) {
     order: 0;
+  }
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.about__item--flower::before {
+  top: 28px;
+  left: 7px;
+  width: 33px;
+  height: 38px;
+  background-image: url("../img/icon-flower.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
+}
+
+.about__item--clew::before {
+  top: 31px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon-clew.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 34px;
+    left: 3px;
+  }
+}
+
+.about__item--bill::before {
+  top: 29px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon-bill.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+  }
+}
+
+.about__item--rocket::before {
+  top: 32px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon-rocket.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 37px;
+    left: -9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -6px;
+  }
+}
+
+.about__item--heart::before {
+  top: 34px;
+  left: 6px;
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon-heart.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 42px;
+    left: 8px;
+  }
+}
+
+.about__item--gift::before {
+  top: 30px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icon-gift.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 37px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 3px;
   }
 }

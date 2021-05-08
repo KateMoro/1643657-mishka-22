@@ -20,13 +20,12 @@
 
 .page-footer__socials {
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
   border-bottom: 1px solid $color-gray-300;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 55px;
-    padding-left: 30px;
     border: none;
   }
 }

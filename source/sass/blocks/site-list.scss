@@ -1,22 +1,11 @@
 .site-list {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.site-list__item {
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-  }
-
+.site-list__item--border {
   @media (min-width: $desktop-width) {
-    margin-right: 30px;
-  }
-}
-
-.site-list__item:last-child {
-  @media (min-width: $tablet-width) {
-    margin-right: 0;
+    border-right: 1px solid rgba($color-black, 0.1);
   }
 }
 
@@ -27,6 +16,18 @@
   font-weight: 700;
   color: $color-black;
   text-decoration: none;
+
+  &:hover {
+    color: rgba($color-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-black, 0.3);
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $color-gray-200;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
@@ -40,5 +41,6 @@
 }
 
 .site-list__link--small {
+  padding: 20px 0;
   font-size: 15px;
 }

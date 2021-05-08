@@ -15,3 +15,15 @@
 .socials__item:last-child {
   margin-right: 0;
 }
+
+.socials__link svg {
+  fill: $color-black;
+}
+
+.socials__link:hover svg {
+  fill: $color-primary-500;
+}
+
+.socials__link:active svg {
+  fill: rgba($color-primary-500, 0.3);
+}

@@ -4,8 +4,10 @@
 }
 
 .page-header__container {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    width: $tablet-width;
     padding: 0 50px;
   }
 
