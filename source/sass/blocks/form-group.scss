@@ -1,11 +1,12 @@
 .form-group {
+  position: relative;
   border: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,8 +15,10 @@
 }
 
 .form-group__title {
+  position: relative;
   width: 260px;
-  margin: 25px auto 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   font-size: 17px;
   font-weight: 700;
   color: $color-primary-100;
@@ -24,10 +27,40 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 160px;
+    top: 63px;
+    left: 50px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 110px;
+    left: 108px;
+  }
+}
+
+.form-group__title--color {
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.form-group__title::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    height: 1px;
+    background-color: $color-primary-200;
+  }
+}
+
+.form-group__title--width::after {
+  @media (max-width: $mobile-width-only) {
+    width: 182px;
   }
 }
 
@@ -58,6 +91,20 @@
 }
 
 .form-group__item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.form-group__item--mo-margin {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 0;
+  }
+}
+
+.form-group__item--margin {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }

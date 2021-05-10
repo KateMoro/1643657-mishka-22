@@ -1,4 +1,6 @@
 .text-field {
+  position: relative;
+  display: block;
   font-size: 17px;
   font-weight: 700;
 
@@ -19,7 +21,7 @@
 .text-field__input {
   display: block;
   width: 100%;
-  padding: 17px 0;
+  padding: 11px 0;
   font-family: inherit;
   font-size: 17px;
   border: none;
@@ -28,8 +30,20 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/-1;
     grid-row: 1/-1;
-    padding: 18px;
+    padding: 13px;
+    padding-left: 18px;
+    margin-left: 32px;
     font-size: 19px;
+
+    &:hover,
+    &:focus {
+      border-color: $color-primary-200;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+    margin-left: 0;
   }
 }
 
@@ -37,8 +51,21 @@
   color: rgba($color-black, 0.3);
 }
 
-.text-field__input--border {
+.text-field__input--textarea {
+  margin-top: 18px;
+  padding: 15px;
+  line-height: 18px;
   border: 2px solid $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-top: 3px;
+
+    &:hover,
+    &:focus {
+      border-color: $color-primary-200;
+    }
+  }
 }
 
 .text-field__input--phone {
@@ -52,5 +79,43 @@
   @media (min-width: $tablet-width) {
     background-color: inherit;
     width: auto;
+  }
+}
+
+.text-field__input--margin {
+  @media (min-width: $desktop-width) {
+    margin-left: 26px;
+  }
+}
+
+.text-field__text {
+  position: relative;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+  }
+}
+
+.text-field__text::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    height: 1px;
+    background-color: $color-primary-200;
+  }
+}
+
+.text-field__text--width::after {
+  @media (max-width: $mobile-width-only) {
+    width: 182px;
   }
 }
