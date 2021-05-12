@@ -3,12 +3,6 @@
   list-style: none;
 }
 
-.site-list__item--border {
-  @media (min-width: $desktop-width) {
-    border-right: 1px solid rgba($color-black, 0.1);
-  }
-}
-
 .site-list__link {
   display: block;
   padding: 27px 30px 27px 76px;

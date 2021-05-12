@@ -14,18 +14,19 @@
 
 .production__title {
   margin: 0;
-  padding: 20px 0 20px 90px;
+  padding: 20px 0 28px 90px;
   font-size: 17px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-left: 105px;
+    padding-bottom: 25px;
     font-size: 20px;
     border-top: 1px solid $color-gray-200;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 95px 60px 0;
+    padding: 102px 56px 0;
     border-top: none;
   }
 }
@@ -50,6 +51,7 @@
   color: $color-gray-700;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 15px;
@@ -57,8 +59,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-left: 60px;
+    margin-top: 8px;
+    margin-left: 55px;
+    margin-bottom: 32px;
   }
 }
 
@@ -67,9 +70,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 40px 45px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 60px 60px;
+    margin: 0 56px 63px;
   }
 }

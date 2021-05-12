@@ -1,4 +1,14 @@
 .title-wrap {
   background: $color-gray-100;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 1150px 34px;
+  }
 }

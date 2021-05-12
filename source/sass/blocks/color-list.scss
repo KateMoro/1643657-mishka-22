@@ -2,11 +2,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 50px;
+    gap: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 242px 242px 242px;
-    gap: 20px;
   }
 }
