@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0;
+    padding: 22px 0 15px;
     text-align: left;
   }
 
@@ -30,6 +30,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: center;
+    padding: 9px 0 2px;
   }
 }
 

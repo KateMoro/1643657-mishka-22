@@ -6,14 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__container">
       <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
-          <img src="img/logo-mishka.svg" width="86" height="35" alt="Логотип «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo/mishka-logo-mobile.svg" alt="Логотип «Мишка»">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -62,7 +69,11 @@
         <ul class="catalog__list">
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__image" src="img/catalog-bunny.jpg" width="260" height="195" alt="Вязаная игрушка-зайчик, белая голова, синее туловище">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/bunny-desktop.jpg 1x, img/catalog/bunny-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/bunny-tablet.jpg 1x, img/catalog/bunny-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="img/catalog/bunny-mobile.jpg" srcset="img/catalog/bunny-mobile@2x.jpg 2x" alt="Вязаная игрушка-зайчик, белая голова, синее туловище">
+              </picture>
             </a>
             <div class="product-card__wrapper">
               <div class="product-card__top">
@@ -84,7 +95,11 @@
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__image" src="img/catalog-storage-basket.jpg" width="260" height="195" alt="Вязаная двухцветная корзина, сверху белая, снизу розовая, внутри свернутые салфетки">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/storage-basket-desktop.jpg 1x, img/catalog/storage-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/storage-basket-tablet.jpg 1x, img/catalog/storage-basket-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="img/catalog/storage-basket-mobile.jpg" srcset="img/catalog/storage-basket-mobile@2x.jpg 2x" alt="Вязаная двухцветная корзина, сверху белая, снизу розовая, внутри свернутые салфетки">
+              </picture>
             </a>
             <div class="product-card__wrapper">
               <div class="product-card__top">
@@ -106,7 +121,11 @@
           </li>
           <li class="catalog__item product-card">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__image" src="img/catalog-toy-basket.jpg" width="260" height="195" alt="Вязаная двухцветная корзина, сверху белая, снизу зеленая, внутри игрушки: кот, зайчик, мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/toy-basket-desktop.jpg 1x, img/catalog/toy-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/toy-basket-tablet.jpg 1x, img/catalog/toy-basket-tablet@2x.jpg 2x">
+                <img class="product-card__image" src="img/catalog/toy-basket-mobile.jpg" srcset="img/catalog/toy-basket-mobile@2x.jpg 2x" alt="Вязаная двухцветная корзина, сверху белая, снизу зеленая, внутри игрушки: кот, зайчик, мишка">
+              </picture>
             </a>
             <div class="product-card__wrapper">
               <div class="product-card__top">
@@ -131,7 +150,11 @@
       <section class="page-main__production production">
         <h2 class="production__title">Процесс производства</h2>
         <figure class="production__multimedia multimedia">
-          <img class="multimedia__image" src="img/catalog-video.jpg" width="260" height="150" alt="Вязаная двухцветная корзина, сверху зеленая, снизу серая">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+            <img class="multimedia__image" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Вязаная двухцветная корзина, сверху зеленая, снизу серая">
+          </picture>
           <a class="multimedia__link" href="#">
             <span class="visually-hidden">Воспроизвести видео</span>
             <svg class="multimedia__link-img" aria-hidden="true" focusable="false" width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +172,7 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип «Мишка»">
+        <img src="img/mishka-logo/logo-footer.svg" width="102" height="34" alt="Логотип «Мишка»">
       </a>
       <div class="page-footer__socials socials">
         <ul class="socials__list">

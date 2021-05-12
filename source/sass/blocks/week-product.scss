@@ -136,23 +136,23 @@
   }
 }
 
-.week-product__image {
-  width: 100%;
-  object-fit: cover;
-
+.week-product__image-wrap {
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
     grid-row: 2/6;
     justify-self: end;
     align-self: end;
-    height: 404px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
     grid-row: 1/6;
-    height: 636px;
   }
+}
+
+.week-product__image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .week-product__button {
