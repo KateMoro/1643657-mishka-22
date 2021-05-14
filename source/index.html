@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__container">
         <nav class="main-nav">
           <a class="main-nav__logo">
-            <img src="img/logo-mishka.svg" width="86" height="35" alt="Логотип «Мишка»">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo/mishka-logo-tablet.svg">
+              <img src="img/mishka-logo/mishka-logo-mobile.svg" alt="Логотип «Мишка»">
+            </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -101,7 +109,13 @@
               <dd class="product-specification__value">15 см</dd>
             </div>
           </dl>
-          <img class="week-product__image" src="img/triple-set.jpg" width="260" height="315" alt="Три вязанные корзинки разных размеров">
+          <div class="week-product__image-wrap">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/index/triple-set-desktop.jpg 1x, img/index/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/triple-set-tablet.jpg 1x, img/index/triple-set-tablet@2x.jpg 2x">
+              <img class="week-product__image" src="img/index/triple-set-mobile.jpg" srcset="img/index/triple-set-mobile@2x.jpg 2x" alt="Три вязанные корзинки разных размеров">
+            </picture>
+          </div>
           <p class="week-product__price">Цена: 990 руб.</p>
           <a class="week-product__button button" href="#">Заказать</a>
         </div>
@@ -177,7 +191,11 @@
           </dl>
         </div>
         <div class="contacts__map">
-          <img src="img/map.png" width="320" height="455" alt="Карта">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+            <img src="img/map/map-mobile.png" srcset="img/map/map-mobile@2x.png 2x" alt="Карта">
+          </picture>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619864014256!5m2!1sru!2sru" width="320" height="455" allowfullscreen="" loading="lazy" title="г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101"></iframe>
         </div>
         <a class="contacts__write button" href="#">Напишите нам</a>
@@ -186,7 +204,7 @@
     <footer class="page-footer">
       <div class="page-footer__container container">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип «Мишка»">
+          <img src="img/mishka-logo/logo-footer.svg" width="102" height="34" alt="Логотип «Мишка»">
         </a>
         <div class="page-footer__socials socials">
           <ul class="socials__list">

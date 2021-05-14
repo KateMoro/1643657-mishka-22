@@ -1,12 +1,21 @@
 .intro {
   padding: 71px 30px 120px;
-  background-image: url("../img/bg-index-intro.jpg");
+  background-image: url("../img/index/bg-intro-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/bg-intro-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 155px 50px 490px;
+    background-image: url("../img/index/bg-intro-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/bg-intro-desktop@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -6,14 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__container">
       <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
-          <img src="img/logo-mishka.svg" width="86" height="35" alt="Логотип «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo/mishka-logo-mobile.svg" alt="Логотип «Мишка»">
+          </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -193,7 +200,7 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип «Мишка»">
+        <img src="img/mishka-logo/logo-footer.svg" width="102" height="34" alt="Логотип «Мишка»">
       </a>
       <div class="page-footer__socials socials">
         <ul class="socials__list">

@@ -22,9 +22,14 @@
     gap: 30px;
     padding-top: 81px;
     padding-bottom: 135px;
-    background-image: url("../img/bg-review.jpg");
+    background-image: url("../img/index/bg-review.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/bg-review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
