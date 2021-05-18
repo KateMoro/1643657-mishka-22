@@ -14,17 +14,15 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
-
 // HTML
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('build'));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 }
 
 exports.html = html;
-
 
 // Styles
 
@@ -33,11 +31,9 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(sourcemap.write("."))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([csso()]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -46,15 +42,15 @@ const styles = () => {
 
 exports.styles = styles;
 
-
 // Scripts
 
 const scripts = () => {
   return gulp.src("source/js/main.js")
-  .pipe(terser())
-  .pipe(rename("main.min.js"))
-  .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
+    .pipe(gulp.dest("build/js"))
+    .pipe(terser())
+    .pipe(rename("main.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
@@ -80,7 +76,6 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
-
 // WebP
 
 const createWebp = () => {
@@ -91,20 +86,18 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
-
 // Sprite
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
-
 
 // Copy
 
@@ -123,15 +116,13 @@ const copy = (done) => {
 
 exports.copy = copy;
 
-
 // Clean
 
 const clean = () => {
   return del("build");
-};
+}
 
 exports.clean = clean;
-
 
 // Server
 
@@ -149,7 +140,6 @@ const server = (done) => {
 
 exports.server = server;
 
-
 // Reload
 
 const reload = (done) => {
@@ -164,7 +154,6 @@ const watcher = () => {
   gulp.watch("source/js/main.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
-
 
 // Build
 
@@ -182,7 +171,6 @@ const build = gulp.series(
 );
 
 exports.build = build;
-
 
 // Default
 
