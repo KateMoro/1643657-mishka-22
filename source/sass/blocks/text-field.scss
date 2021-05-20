@@ -11,6 +11,27 @@
   }
 }
 
+.text-field svg {
+  position: absolute;
+  top: 37px;
+  right: 4px;
+  fill: rgba($color-black, 0.2);
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
+  }
+}
+
+.text-field:hover svg,
+.text-field:active svg {
+  fill: $color-primary-200;
+}
+
 .text-field--color {
   font-size: 17px;
   font-weight: 700;
@@ -30,8 +51,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/-1;
     grid-row: 1/-1;
-    padding: 13px;
-    padding-left: 18px;
+    padding: 14px 13px 13px 9px;
     margin-left: 32px;
     font-size: 19px;
 
@@ -52,7 +72,8 @@
 }
 
 .text-field__input--textarea {
-  margin-top: 18px;
+  height: 142px;
+  margin-top: 16px;
   padding: 15px;
   line-height: 18px;
   border: 2px solid $color-gray-700;
@@ -69,16 +90,23 @@
 }
 
 .text-field__input--phone {
+  padding-top: 12px;
+  padding-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     background-color: inherit;
     width: auto;
+    padding-left: 18px;
   }
 }
 
 .text-field__input--email {
+  padding-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     background-color: inherit;
     width: auto;
+    padding-left: 18px;
   }
 }
 

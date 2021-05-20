@@ -70,7 +70,7 @@
     </div>
     <form class="page-main__form order-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="order-form__wrapper">
-        <fieldset class="order-form__group form-group container">
+        <fieldset class="order-form__group form-group form-group--type container">
           <legend class="form-group__title">Тип</legend>
           <ul class="form-group__list">
             <li class="form-group__item form-group__item--mo-margin">
@@ -92,7 +92,7 @@
       </div>
       <div class="order-form__wrapper">
         <fieldset class="order-form__group form-group container">
-          <legend class="form-group__title form-group__title--color">Цвет</legend>
+          <legend class="form-group__title">Цвет</legend>
           <ul class="form-group__list form-group__list--end color-list">
             <li class="form-group__item">
               <label class="form-group__field checkbox">
@@ -143,19 +143,19 @@
         <fieldset class="order-form__group form-group container">
           <legend class="form-group__title">ФИО</legend>
           <ul class="form-group__list">
-            <li class="form-group__item">
+            <li class="form-group__item form-group__item--margin-bottom">
               <label class="form-group__field text-field">
                 Имя:
                 <input class="text-field__input text-field__input--margin" type="text" name="name" placeholder="Введите ваше имя*">
               </label>
             </li>
-            <li class="form-group__item">
+            <li class="form-group__item form-group__item--margin-bottom">
               <label class="form-group__field text-field">
                 Фамилия:
                 <input class="text-field__input text-field__input--margin" type="text" name="surname" placeholder="Укажите фамилию*">
               </label>
             </li>
-            <li class="form-group__item form-group__item--margin">
+            <li class="form-group__item form-group__item--mo-margin">
               <label class="form-group__field text-field">
                 Отчество:
                 <input class="text-field__input text-field__input--margin" type="text" name="patronymic" placeholder="Отчество, если желаете">
@@ -172,20 +172,26 @@
               <label class="form-group__field text-field text-field--color text-grid" aria-label="Телефон">
                 <span class="text-field__text">Тел</span>
                 <input class="text-field__input text-field__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg aria-hidden="true" focusable="false" width="25" height="24">
+                  <use href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </label>
             </p>
             <p class="form-group__item form-group__item--margin">
               <label class="form-group__field text-field text-field--color text-grid" aria-label="Электронная почта">
                 <span class="text-field__text text-field__text--width">E-mail</span>
                 <input class="text-field__input text-field__input--email" type="email" name="email" placeholder="Ваш Email*">
+                <svg aria-hidden="true" focusable="false" width="32" height="21">
+                  <use href="img/sprite.svg#icon-email"></use>
+                </svg>
               </label>
             </p>
           </div>
         </fieldset>
       </div>
-      <div class="order-form__wrapper">
+      <div class="order-form__wrapper order-form__wrapper--no-padding">
         <div class="order-form__group form-group container">
-          <p class="form-group__list form-group__list--start">
+          <p class="form-group__list form-group__list--no-margin form-group__list--start">
             <label class="form-group__field text-field text-field--color text-grid" for="add-textarea">
               <span class="text-field__text">Доп<span class="visually-hidden">олнительная информация</span></span>
               <textarea class="text-field__input text-field__input--textarea" id="add-textarea" name="add" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>

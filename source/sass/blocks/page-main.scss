@@ -20,7 +20,7 @@
 
 .page-main__title {
   margin: 0;
-  padding-top: 73px;
+  padding-top: 71px;
   padding-bottom: 74px;
   font-size: 27px;
   line-height: 30px;
@@ -45,7 +45,7 @@
   color: $color-gray-700;
 
   @media (min-width: $tablet-width) {
-    margin-top: 53px;
+    margin-top: 55px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -65,13 +65,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 110px;
+    margin-top: 113px;
     margin-bottom: 58px;
   }
 }
 
 .page-main__production {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 100px;
