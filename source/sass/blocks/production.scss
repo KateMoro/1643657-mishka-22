@@ -16,7 +16,7 @@
 .production::before {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 32px;
   left: 32px;
   width: 33px;
   height: 22px;
@@ -35,7 +35,7 @@
 
 .production__title {
   margin: 0;
-  padding: 18px 0 28px 90px;
+  padding: 20px 0 26px 90px;
   font-size: 17px;
 
   @media (min-width: $tablet-width) {
