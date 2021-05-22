@@ -18,6 +18,18 @@
   }
 }
 
+.page-footer__logo svg {
+  fill: $color-black;
+}
+
+.page-footer__logo:hover svg {
+  fill: $color-primary-500;
+}
+
+.page-footer__logo:active svg {
+  fill: rgba($color-primary-500, 0.3);
+}
+
 .page-footer__socials {
   padding-top: 26px;
   padding-bottom: 20px;

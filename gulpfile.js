@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const terser = require('gulp-terser');
+const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -19,7 +19,7 @@ const sync = require("browser-sync").create();
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 }
 
 exports.html = html;
@@ -129,7 +129,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

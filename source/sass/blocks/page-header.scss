@@ -1,6 +1,10 @@
 .page-header {
   position: relative;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $color-white, $color-white 88px, rgba($color-black, 0.1) 88px, rgba($color-black, 0.1) 89px, $color-gray-150 89px, $color-gray-150 100%);
+  }
 }
 
 .page-header__container {

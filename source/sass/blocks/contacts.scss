@@ -29,7 +29,7 @@
     padding: 0;
     margin: 0;
     grid-column: 2/3;
-    grid-row: 1/3;
+    grid-row: 1/2;
   }
 }
 
@@ -97,7 +97,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
     grid-row: 1/3;
-    height: 455px;
+    min-height: 455px;
   }
 }
 

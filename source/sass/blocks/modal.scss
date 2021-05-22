@@ -7,7 +7,7 @@
   transform: translateY(-50%);
   width: 320px;
   z-index: 10;
-  padding: 0 30px;
+  padding: 28px;
   background-color: $color-white;
   border: 1px solid $color-gray-400;
   box-shadow: 0 5px 10px rgba($color-black, 0.25);
@@ -15,7 +15,8 @@
   @media (min-width: $tablet-width) {
     width: 566px;
     margin-left: -283px;
-    padding: 0 100px;
+    padding: 40px;
+    padding-bottom: 26px;
   }
 }
 
@@ -24,14 +25,19 @@
 }
 
 .modal__title {
+  width: 160px;
+  margin: 0 auto;
+  padding-left: 8px;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
     font-size: 30px;
     line-height: 57px;
+    text-align: center;
   }
 }
 

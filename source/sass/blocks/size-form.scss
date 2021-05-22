@@ -1,4 +1,6 @@
 .size-form__title {
+  margin-top: 14px;
+  margin-bottom: 22px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -6,6 +8,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 17px;
   }
 }
@@ -28,7 +32,11 @@
 }
 
 .size-form__button {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 46px;
+  width: 260px;
+  margin: 30px auto 20px;
+  font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }

@@ -56,3 +56,9 @@
   background-color: rgba($color-black, 0.3);
   border: none;
 }
+
+.checkbox__input:focus-visible + .checkbox__box {
+  box-shadow:
+    0 0 0 2px $color-white,
+    0 0 2px 4px $color-primary-200;
+}

@@ -34,6 +34,26 @@
   }
 }
 
+.main-nav__logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav__logo:active {
+  opacity: 0.3;
+}
+
+.main-nav__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 30px;

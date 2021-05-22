@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 18px 30px;
+  min-width: 82px;
+  padding: 12px;
   font-size: 17px;
   font-weight: 700;
   color: $color-gray-700;
@@ -17,7 +18,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 18px 45px;
+    min-width: 112px;
   }
 }
 

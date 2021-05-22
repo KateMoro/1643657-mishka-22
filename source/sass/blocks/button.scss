@@ -34,3 +34,8 @@
     color: rgba($color-white, 0.3);
   }
 }
+
+.button:focus {
+  outline: 2px solid $color-primary-200;
+  outline-offset: 2px;
+}
