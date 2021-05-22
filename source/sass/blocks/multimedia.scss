@@ -22,21 +22,19 @@
   left: 0;
 }
 
+.multimedia__link:hover {
+  transform: scale(1.2);
+}
+
+.multimedia__link:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
 .multimedia__link-img {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -39px;
   margin-left: -51px;
-
-  @media (min-width: $tablet-width) {
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    &:active {
-      transform: scale(0.8);
-      opacity: 0.3;
-    }
-  }
 }
