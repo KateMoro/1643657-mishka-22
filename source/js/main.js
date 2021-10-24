@@ -36,3 +36,39 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+// Slider
+
+const slides= document.querySelectorAll('.reviews__item');
+const prevButton = document.querySelector('.reviews__button--prev');
+const nextButton = document.querySelector('.reviews__button--next');
+
+let sliderIndex = 1;
+
+const showSlides = (n) => {
+  if (n > slides.length) {
+    sliderIndex = 1;
+  }
+
+  if (n < 1) {
+    sliderIndex = slides.length;
+  }
+
+  slides.forEach(item => item.style.display = 'none');
+  slides[sliderIndex - 1].style.display = 'block';
+}
+
+const plusSlides = (n) => {
+  showSlides(sliderIndex += n);
+}
+
+prevButton.addEventListener('click', () => {
+  plusSlides(-1);
+});
+
+nextButton.addEventListener('click', () => {
+  plusSlides(1);
+});
+
+showSlides(sliderIndex);
