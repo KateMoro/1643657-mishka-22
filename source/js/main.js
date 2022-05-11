@@ -12,24 +12,24 @@ mainNavSearch.classList.add("main-nav__search--closed");
 mainNavCart.classList.add("main-nav__cart--closed");
 mainNavButton.classList.remove("main-nav__toggle--no-js");
 
-mainNavButton.onclick = function() {
+mainNavButton.addEventListener("click", () => {
   mainNavButton.classList.toggle("main-nav__toggle--opened");
   mainNavList.classList.toggle("main-nav__list--closed");
   mainNavSearch.classList.toggle("main-nav__search--closed");
   mainNavCart.classList.toggle("main-nav__cart--closed");
-};
+});
 
-weekProductButton.addEventListener("click", function (evt) {
+weekProductButton.addEventListener("click", (evt) => {
   evt.preventDefault();
   weekProductPopup.classList.add("modal--show");
 });
 
-closePopup.onclick = function() {
+closePopup.addEventListener("click", () => {
   weekProductPopup.classList.remove("modal--show");
-};
+});
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+window.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
     if (weekProductPopup.classList.contains("modal--show")) {
       evt.preventDefault();
       weekProductPopup.classList.remove("modal--show");
@@ -40,7 +40,7 @@ window.addEventListener("keydown", function (evt) {
 
 // Slider
 
-const slides= document.querySelectorAll('.reviews__item');
+const slides = document.querySelectorAll('.reviews__item');
 const prevButton = document.querySelector('.reviews__button--prev');
 const nextButton = document.querySelector('.reviews__button--next');
 
